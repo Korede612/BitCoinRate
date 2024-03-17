@@ -13,6 +13,8 @@
 		93DDD3772BA72536002AE31A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93DDD3752BA72536002AE31A /* Main.storyboard */; };
 		93DDD3792BA72539002AE31A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93DDD3782BA72539002AE31A /* Assets.xcassets */; };
 		93DDD37C2BA72539002AE31A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93DDD37A2BA72539002AE31A /* LaunchScreen.storyboard */; };
+		93DDD3872BA72615002AE31A /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DDD3862BA72615002AE31A /* CoinManager.swift */; };
+		93DDD3892BA72640002AE31A /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DDD3882BA72640002AE31A /* CoinData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		93DDD3782BA72539002AE31A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93DDD37B2BA72539002AE31A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93DDD37D2BA72539002AE31A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93DDD3862BA72615002AE31A /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
+		93DDD3882BA72640002AE31A /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		93DDD36E2BA72536002AE31A /* BitCoinRate */ = {
 			isa = PBXGroup;
 			children = (
+				93DDD3852BA725D2002AE31A /* Controller */,
+				93DDD3842BA725C9002AE31A /* View */,
+				93DDD3832BA725C2002AE31A /* Model */,
 				93DDD36F2BA72536002AE31A /* AppDelegate.swift */,
 				93DDD3712BA72536002AE31A /* SceneDelegate.swift */,
-				93DDD3732BA72536002AE31A /* ViewController.swift */,
-				93DDD3752BA72536002AE31A /* Main.storyboard */,
 				93DDD3782BA72539002AE31A /* Assets.xcassets */,
 				93DDD37A2BA72539002AE31A /* LaunchScreen.storyboard */,
 				93DDD37D2BA72539002AE31A /* Info.plist */,
 			);
 			path = BitCoinRate;
+			sourceTree = "<group>";
+		};
+		93DDD3832BA725C2002AE31A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93DDD3862BA72615002AE31A /* CoinManager.swift */,
+				93DDD3882BA72640002AE31A /* CoinData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		93DDD3842BA725C9002AE31A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				93DDD3752BA72536002AE31A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		93DDD3852BA725D2002AE31A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				93DDD3732BA72536002AE31A /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93DDD3872BA72615002AE31A /* CoinManager.swift in Sources */,
 				93DDD3742BA72536002AE31A /* ViewController.swift in Sources */,
+				93DDD3892BA72640002AE31A /* CoinData.swift in Sources */,
 				93DDD3702BA72536002AE31A /* AppDelegate.swift in Sources */,
 				93DDD3722BA72536002AE31A /* SceneDelegate.swift in Sources */,
 			);
